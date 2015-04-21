@@ -5,7 +5,7 @@ permalink: /doc/UserDoc/OpenPGP/
 redirect_from: /wiki/UserDoc/OpenPGP/
 ---
 
-**Note 2014-08-03: This page is deprecated by [SplitGpg](/wiki/UserDoc/SplitGpg). The content of this page has been integrated into that page.**
+**Note 2014-08-03: This page is deprecated by [SplitGpg](/doc/UserDoc/SplitGpg). The content of this page has been integrated into that page.**
 
 Using OpenPGP in Qubes
 ======================
@@ -15,7 +15,7 @@ One of the main advantages of Qubes is that it allows the user to isolate sensit
 Basic Instructions
 ------------------
 
-The basic procedure is to create a master keypair and any number of signing/encryption subkeys in your ultimately trusted "vault" domain. The secret portion of the master keypair should never leave your vault. The public portion of the master key, along with the subkeys, can then be [copied](/wiki/VmTools/QvmCopyToVm) to any number of less trusted domains, e.g. "work," where they will be used normally. If your work domain is ever compromised (and your subkeys along with it), your master key will still be safe, and you can issue new subkeys. For detailed instructions, see the [tutorials and discussions](/wiki/UserDoc/OpenPGP#TutorialsandDiscussions) below.
+The basic procedure is to create a master keypair and any number of signing/encryption subkeys in your ultimately trusted "vault" domain. The secret portion of the master keypair should never leave your vault. The public portion of the master key, along with the subkeys, can then be [copied](/doc/VmTools/QvmCopyToVm) to any number of less trusted domains, e.g. "work," where they will be used normally. If your work domain is ever compromised (and your subkeys along with it), your master key will still be safe, and you can issue new subkeys. For detailed instructions, see the [tutorials and discussions](/doc/UserDoc/OpenPGP#TutorialsandDiscussions) below.
 
 Security Recommendations
 ------------------------
@@ -32,7 +32,7 @@ Security Recommendations
 
 1.  No Vault Importing
 
-> > Untrusted files should never be imported into the vault. In addition to the networking restriction in point 2, this means not [copying](/wiki/VmTools/QvmCopyToVm) untrusted files to the vault. Whether any given file is "untrusted" is an individual user decision, but we recommend that users never copy from a less trusted domain to a more trusted domain. At present, this means that there is no secure way to sign other people's keys with the master key.
+> > Untrusted files should never be imported into the vault. In addition to the networking restriction in point 2, this means not [copying](/doc/VmTools/QvmCopyToVm) untrusted files to the vault. Whether any given file is "untrusted" is an individual user decision, but we recommend that users never copy from a less trusted domain to a more trusted domain. At present, this means that there is no secure way to sign other people's keys with the master key.
 
 Tutorials and Discussions
 -------------------------

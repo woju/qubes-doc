@@ -69,8 +69,8 @@ This template is ready to use for a standard firewall VM. However, using the def
 
 The needed packages are depend on the VPN technology. `yum search "NetworkManager VPN plugin"` command may help you to choose the right one.
 
-[More details about setting up a VPN Gateway](/wiki/VPN#ProxyVM)
+[More details about setting up a VPN Gateway](/doc/VPN#ProxyVM)
 
 #### TOR
 
-[UserDoc/TorVM](/wiki/UserDoc/TorVM)
+[UserDoc/TorVM](/doc/UserDoc/TorVM)

@@ -96,7 +96,7 @@ You can also build selected component separately. Eg. to compile only gui virtua
 make gui-daemon
 {% endhighlight %}
 
-Full list you can get from make help. For advanced use and preparing sources for use with [QubesBuilder](/wiki/QubesBuilder) take a look at [QubesBuilderDetails](/wiki/QubesBuilderDetails) page.
+Full list you can get from make help. For advanced use and preparing sources for use with [QubesBuilder](/doc/QubesBuilder) take a look at [QubesBuilderDetails](/doc/QubesBuilderDetails) page.
 
 Making customized build
 -----------------------
@@ -176,7 +176,7 @@ There is one issue with above experimental version: new Xorg server have differe
 2.  Login as just created user
 3.  Switch to root (sudo -s)
 4.  Edit /etc/kde/kdm/kdmrc
-    -   locate "[ServerArgsLocal?](/wiki/ServerArgsLocal)=-nr -nolisten tcp" line
+    -   locate "[ServerArgsLocal?](/doc/ServerArgsLocal)=-nr -nolisten tcp" line
     -   remove "-nr" from it
 
 5.  Restart login manager (now it will start and allow you to login graphically): initctl restart prefdm
@@ -184,7 +184,7 @@ There is one issue with above experimental version: new Xorg server have differe
 Code verification keys management
 =================================
 
-[QubesBuilder](/wiki/QubesBuilder) by default verifies signed tags on every downloaded code. Public keys used for that are stored in `keyrings/git`. By default Qubes developers' keys are imported automatically, but if you need some additional keys (for example your own), you can add them using:
+[QubesBuilder](/doc/QubesBuilder) by default verifies signed tags on every downloaded code. Public keys used for that are stored in `keyrings/git`. By default Qubes developers' keys are imported automatically, but if you need some additional keys (for example your own), you can add them using:
 
 {% highlight trac-wiki %}
 GNUPGHOME=$PWD/keyrings/git gpg --import /path/to/key.asc

@@ -29,4 +29,4 @@ e.g.:
 git clone git://git.qubes-os.org/qubes-r2/core-admin.git core-admin
 {% endhighlight %}
 
-Currently the preferred way of contributing to the project is by [sending a patch](/wiki/DevelFaq#Q:HowdoIsubmitapatch) via the project's mailing list (`git format-patch`).
+Currently the preferred way of contributing to the project is by [sending a patch](/doc/DevelFaq#Q:HowdoIsubmitapatch) via the project's mailing list (`git format-patch`).

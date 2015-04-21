@@ -27,4 +27,4 @@ Known issues
 -   Probably not working as netvm or proxyvm (untested as of today)
 -   Slow VM shutdown - qrexec agent termination takes a while (SIGTERM not handled?)
 
-If you want to help in improving the template, feel free to [contribute](/wiki/ContributingHowto).
+If you want to help in improving the template, feel free to [contribute](/doc/ContributingHowto).

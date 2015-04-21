@@ -22,10 +22,10 @@ Keys exposed by dom0 to VM (only Qubes specific included):
 
 -   `qubes-vm-type` - VM type, the same as `type` field in `qvm-prefs`. One of `AppVM`, `ProxyVM`, `NetVM`, `TemplateVM`, `HVM`, `TemplateHVM`
 -   `qubes-vm-updatable` - flag whether VM is updatable (whether changes in root.img will survive VM restart). One of `True`, `False`
--   `qubes-timezone - name of timezone based on dom0 timezone. For example `[Europe/Warsaw?](/wiki/SystemDoc/Europe/Warsaw)\`
+-   `qubes-timezone - name of timezone based on dom0 timezone. For example `[Europe/Warsaw?](/doc/SystemDoc/Europe/Warsaw)\`
 -   `qubes-keyboard` - keyboard layout based on dom0 layout. Its syntax is suitable for `xkbcomp` command (after expanding escape sequences like `\n` or `\t`). This is meant only as some default value, VM can ignore this option and choose its own keyboard layout (this is what keyboard setting from Qubes Manager does). This entry is created as part of gui-daemon initialization (so not available when gui-daemon disabled, or not started yet).
 -   `qubes-debug-mode` - flag whether VM have debug mode enabled (qvm-prefs setting). One of `1`, `0`
--   `qubes-service/SERVICE_NAME` - subtree for VM services controlled from dom0 (using qvm-service command or Qubes Manager). One of `1`, `0`. Note that not every service will be listed here, if entry is missing, it means "use VM default". List of currently supported services is in [qvm-service man page](/wiki/Dom0Tools/QvmService)
+-   `qubes-service/SERVICE_NAME` - subtree for VM services controlled from dom0 (using qvm-service command or Qubes Manager). One of `1`, `0`. Note that not every service will be listed here, if entry is missing, it means "use VM default". List of currently supported services is in [qvm-service man page](/doc/Dom0Tools/QvmService)
 -   `qubes-netmask` - network mask (only when VM has netvm set); currently hardcoded "255.255.255.0"
 -   \`qubes-ip - IP address for this VM (only when VM has netvm set)
 -   `qubes-gateway` - default gateway IP and primary DNS address (only when VM has netvm set); VM should add host route to this address directly via eth0 (or whatever default interface name is)
@@ -59,4 +59,4 @@ Services called by dom0 to provide some VM configuration:
 GUI protocol
 ------------
 
-GUI initialization includes passing the whole screen dimensions from dom0 to VM. This will most likely be overwritten by qubes.[SetMonitorLayout?](/wiki/SystemDoc/SetMonitorLayout) Qubes RPC call.
+GUI initialization includes passing the whole screen dimensions from dom0 to VM. This will most likely be overwritten by qubes.[SetMonitorLayout?](/doc/SystemDoc/SetMonitorLayout) Qubes RPC call.

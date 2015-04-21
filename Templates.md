@@ -8,10 +8,10 @@ redirect_from: /wiki/Templates/
 ITL Supported
 -------------
 
--   [Fedora - Minimal](/wiki/Templates/FedoraMinimal)
+-   [Fedora - Minimal](/doc/Templates/FedoraMinimal)
 
 Community Supported
 -------------------
 
--   [Debian](/wiki/Templates/Debian)
+-   [Debian](/doc/Templates/Debian)
 
