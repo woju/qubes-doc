@@ -108,7 +108,7 @@ Use `qubes-gpg-import-key` in the client AppVM to import the key into the GPG ba
 Advanced: Using Split GPG with Subkeys
 --------------------------------------
 
-Users with particularly high security requirements may wish to use split GPG with [​subkeys](https://wiki.debian.org/Subkeys). However, this setup comes at a significant cost: It will be impossible to sign other people's keys with the master secret key without breaking this security model. Nonetheless, if signing others' keys is not required, then split GPG with subkeys offers unparalleled security for one's master secret key.
+Users with particularly high security requirements may wish to use split GPG with [subkeys](https://wiki.debian.org/Subkeys). However, this setup comes at a significant cost: It will be impossible to sign other people's keys with the master secret key without breaking this security model. Nonetheless, if signing others' keys is not required, then split GPG with subkeys offers unparalleled security for one's master secret key.
 
 ### Setup Description
 
@@ -140,7 +140,7 @@ This VM has access to the mail server. It accesses the work-gpg VM via the split
 
 ### Security Benefits
 
-In the standard split GPG setup, there are at least two ways in which the work-gpg VM might be compromised. First, an attacker who is capable of exploiting a hypothetical bug in work-email's [​MUA](https://en.wikipedia.org/wiki/Mail_user_agent) could gain control of the work-email VM and send a malformed request which exploits a hypothetical bug in the GPG backend (running in the work-gpg VM), giving the attacker control of the work-gpg VM. Second, a malicious public key file which is imported to the work-gpg VM might exploit a hypothetical bug in the GPG backend which is running there, again giving the attacker control of the work-gpg VM. In either case, such an attacker might then be able to leak both the master secret key and its passphrase (which is regularly input in the work-gpg VM and is therefore easily obtained by an attacker who controls this VM) back to the work-email VM or to another VM (e.g., the netvm, which is always untrusted by default) via the split GPG protocol or other [covert channels](/wiki/DataLeaks).
+In the standard split GPG setup, there are at least two ways in which the work-gpg VM might be compromised. First, an attacker who is capable of exploiting a hypothetical bug in work-email's [MUA](https://en.wikipedia.org/wiki/Mail_user_agent) could gain control of the work-email VM and send a malformed request which exploits a hypothetical bug in the GPG backend (running in the work-gpg VM), giving the attacker control of the work-gpg VM. Second, a malicious public key file which is imported to the work-gpg VM might exploit a hypothetical bug in the GPG backend which is running there, again giving the attacker control of the work-gpg VM. In either case, such an attacker might then be able to leak both the master secret key and its passphrase (which is regularly input in the work-gpg VM and is therefore easily obtained by an attacker who controls this VM) back to the work-email VM or to another VM (e.g., the netvm, which is always untrusted by default) via the split GPG protocol or other [covert channels](/wiki/DataLeaks).
 
 In the alternative setup described in this section (i.e., the subkey setup), even an attacker who manages to gain access to the work-gpg VM will not be able to obtain the user's master secret key since it is simply not there. Rather, the master secret key remains in the vault VM, which is extremely unlikely to be compromised, since nothing is ever copied or transferred into it.<sup>\*</sup> The attacker might nonetheless be able to leak the secret subkeys from the work-gpg VM in the manner described above, but even if this is successful, the secure master secret key can simply be used to revoke the compromised subkeys and to issue new subkeys in their place.
 
@@ -150,8 +150,8 @@ In the alternative setup described in this section (i.e., the subkey setup), eve
 
 (Note: Although the tutorials below were not written with Qubes Split GPG in mind, they can be adapted with a few commonsense adjustments. As always, exercise caution and use your good judgment.)
 
--   [​"OpenPGP in Qubes OS" on the qubes-users mailing list](https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion)
--   [​"Creating the Perfect GPG Keypair" by Alex Cabal](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
--   [​"GPG Offline Master Key w/ smartcard" maintained by Abel Luck](https://gist.github.com/abeluck/3383449)
--   [​"Using GnuPG with QubesOS" by Alex](https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/)
+-   ["OpenPGP in Qubes OS" on the qubes-users mailing list](https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion)
+-   ["Creating the Perfect GPG Keypair" by Alex Cabal](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
+-   ["GPG Offline Master Key w/ smartcard" maintained by Abel Luck](https://gist.github.com/abeluck/3383449)
+-   ["Using GnuPG with QubesOS" by Alex](https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/)
 

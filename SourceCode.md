@@ -15,7 +15,7 @@ All the Qubes code is kept in GIT repositories. We divided the project into seve
 -   `gui-agent-linux.git` -- GUI virtualization, Linux VM side.
 -   `linux-template-builder.git` - scripts and other files used to create Qubes templates images.
 
-You can browse the repositories [​on line via GitWeb](http://git.qubes-os.org/gitweb/). The Qubes official repositories are in the `qubes-rX` directory, where X is release number (1, 2, etc).
+You can browse the repositories [on line via GitWeb](http://git.qubes-os.org/gitweb/). The Qubes official repositories are in the `qubes-rX` directory, where X is release number (1, 2, etc).
 
 To clone a repository:
 

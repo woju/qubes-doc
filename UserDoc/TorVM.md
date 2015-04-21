@@ -12,6 +12,6 @@ redirect_from: /wiki/UserDoc/TorVM/
 Known issues:
 -------------
 
--   [​Service doesn't start without (even empty) user torrc](https://groups.google.com/d/msg/qubes-users/fyBVmxIpbSs/R5mxUcIEZAQJ)
+-   [Service doesn't start without (even empty) user torrc](https://groups.google.com/d/msg/qubes-users/fyBVmxIpbSs/R5mxUcIEZAQJ)
 
-Source of this document: [​http://git.qubes-os.org/gitweb/?p=marmarek/qubes-app-linux-tor.git;a=blob;f=README.md](http://git.qubes-os.org/gitweb/?p=marmarek/qubes-app-linux-tor.git;a=blob;f=README.md)
+Source of this document: [http://git.qubes-os.org/gitweb/?p=marmarek/qubes-app-linux-tor.git;a=blob;f=README.md](http://git.qubes-os.org/gitweb/?p=marmarek/qubes-app-linux-tor.git;a=blob;f=README.md)

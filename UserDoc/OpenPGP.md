@@ -39,9 +39,9 @@ Tutorials and Discussions
 
 (Note: Although some of the tutorials below were not written with Qubes in mind, they can be adapted to Qubes with a few adjustments. As always, exercise caution and use your good judgment.)
 
--   [​"OpenPGP in Qubes OS" on the qubes-users mailing list](https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion)
--   [​"Creating the Perfect GPG Keypair" by Alex Cabal](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
--   [​"GPG Offline Master Key w/ smartcard" maintained by Abel Luck](https://gist.github.com/abeluck/3383449)
+-   ["OpenPGP in Qubes OS" on the qubes-users mailing list](https://groups.google.com/d/topic/qubes-users/Kwfuern-R2U/discussion)
+-   ["Creating the Perfect GPG Keypair" by Alex Cabal](https://alexcabal.com/creating-the-perfect-gpg-keypair/)
+-   ["GPG Offline Master Key w/ smartcard" maintained by Abel Luck](https://gist.github.com/abeluck/3383449)
     -   Author's note: "It is not Qubes OS specific, and in fact assumes you want to use a smartcard, which might not be the case, so skip those bits. Also, use your vault vm instead of booting into an offline livecd as described."
--   [​"Using GnuPG with QubesOS" by Alex](https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/)
+-   ["Using GnuPG with QubesOS" by Alex](https://apapadop.wordpress.com/2013/08/21/using-gnupg-with-qubesos/)
 
