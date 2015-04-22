@@ -62,7 +62,7 @@ gpg --recv-keys 0x36879494
 
 # Verify its fingerprint, set as 'trusted'. 
 # This is described here: 
-# https://wiki.qubes-os.org/trac/wiki/VerifyingSignatures 
+# https://www.qubes-os.org/doc/VerifyingSignatures
 
 wget http://keys.qubes-os.org/keys/qubes-developers-keys.asc 
 gpg --import qubes-developers-keys.asc 
@@ -176,7 +176,7 @@ There is one issue with above experimental version: new Xorg server have differe
 2.  Login as just created user
 3.  Switch to root (sudo -s)
 4.  Edit /etc/kde/kdm/kdmrc
-    -   locate "[ServerArgsLocal?](/doc/ServerArgsLocal)=-nr -nolisten tcp" line
+    -   locate "ServerArgsLocal=-nr -nolisten tcp" line
     -   remove "-nr" from it
 
 5.  Restart login manager (now it will start and allow you to login graphically): initctl restart prefdm
